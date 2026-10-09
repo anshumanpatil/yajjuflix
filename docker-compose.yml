@@ -1,7 +1,7 @@
 services:
   jellyfin:
     image: jellyfin/jellyfin:latest
-    container_name: yajjuflix_v2
+    container_name: yajjuflix
     restart: unless-stopped
     ports:
       - "8096:8096"
@@ -23,6 +23,6 @@ services:
       - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
       - LD_PRELOAD=/usr/lib/jellyfin/libjemalloc.so.2
     volumes:
-      - /home/anshuman/jellyfin/config:/config
-      - /home/anshuman/jellyfin/cache:/cache
-      - /home/anshuman/jellyfin/media:/media
+      - /home/anshuman/yajjuflix/config:/config
+      - /home/anshuman/yajjuflix/cache:/cache
+      - /home/anshuman/yajjuflix/media:/media

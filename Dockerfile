@@ -1,13 +1,5 @@
 FROM jellyfin/jellyfin:latest
 
-# Metadata labels
-LABEL org.opencontainers.image.title="Jellyfin" \
-      org.opencontainers.image.description="The Free Software Media System" \
-      org.opencontainers.image.version="12.0" \
-      org.opencontainers.image.url="https://jellyfin.org" \
-      org.opencontainers.image.documentation="https://jellyfin.org/docs/" \
-      org.opencontainers.image.source="https://github.com/jellyfin/jellyfin-packaging"
-
 # Environment configuration
 ENV DEBIAN_FRONTEND=noninteractive \
     LC_ALL=en_US.UTF-8 \
