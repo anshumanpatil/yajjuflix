@@ -1,0 +1,28 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: yajjuflix_v2
+    restart: unless-stopped
+    ports:
+      - "8096:8096"
+    environment:
+      - HEALTHCHECK_URL=http://localhost:8096/health
+      - DEBIAN_FRONTEND=noninteractive
+      - LC_ALL=en_US.UTF-8
+      - LANG=en_US.UTF-8
+      - LANGUAGE=en_US:en
+      - JELLYFIN_DATA_DIR=/config
+      - JELLYFIN_CACHE_DIR=/cache
+      - JELLYFIN_CONFIG_DIR=/config/config
+      - JELLYFIN_LOG_DIR=/config/log
+      - JELLYFIN_WEB_DIR=/jellyfin/jellyfin-web
+      - JELLYFIN_FFMPEG=/usr/lib/jellyfin-ffmpeg/ffmpeg
+      - XDG_CACHE_HOME=/cache
+      - MALLOC_TRIM_THRESHOLD_=131072
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
+      - LD_PRELOAD=/usr/lib/jellyfin/libjemalloc.so.2
+    volumes:
+      - /home/anshuman/jellyfin/config:/config
+      - /home/anshuman/jellyfin/cache:/cache
+      - /home/anshuman/jellyfin/media:/media
