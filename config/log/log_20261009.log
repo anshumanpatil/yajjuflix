@@ -465,3 +465,145 @@ PRAGMA temp_store=2;
 [2026-10-09 18:54:16.603 +00:00] [INF] [24] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
 [2026-10-09 18:54:16.653 +00:00] [INF] [24] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
 [2026-10-09 18:54:16.653 +00:00] [INF] [24] Emby.Server.Implementations.ApplicationHost: Disposing "Plugin"
+[2026-10-09 18:55:38.745 +00:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 18:55:38.995 +00:00] [INF] [8] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-09 18:55:39.030 +00:00] [INF] [8] Main: Jellyfin version: "12.0.0"
+[2026-10-09 18:55:39.034 +00:00] [INF] [8] Main: Environment Variables: ["[JELLYFIN_DATA_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]", "[JELLYFIN_CACHE_DIR, /cache]", "[JELLYFIN_WEB_DIR, /jellyfin/jellyfin-web]", "[JELLYFIN_CONFIG_DIR, /config/config]", "[JELLYFIN_FFMPEG, /usr/lib/jellyfin-ffmpeg/ffmpeg]"]
+[2026-10-09 18:55:39.037 +00:00] [INF] [8] Main: Arguments: ["/jellyfin/jellyfin.dll"]
+[2026-10-09 18:55:39.038 +00:00] [INF] [8] Main: Operating system: "Debian GNU/Linux 13 (trixie)"
+[2026-10-09 18:55:39.039 +00:00] [INF] [8] Main: Architecture: X64
+[2026-10-09 18:55:39.040 +00:00] [INF] [8] Main: 64-Bit Process: True
+[2026-10-09 18:55:39.040 +00:00] [INF] [8] Main: User Interactive: True
+[2026-10-09 18:55:39.041 +00:00] [INF] [8] Main: Processor count: 2
+[2026-10-09 18:55:39.042 +00:00] [INF] [8] Main: Program data path: "/config"
+[2026-10-09 18:55:39.042 +00:00] [INF] [8] Main: Log directory path: "/config/log"
+[2026-10-09 18:55:39.042 +00:00] [INF] [8] Main: Config directory path: "/config/config"
+[2026-10-09 18:55:39.042 +00:00] [INF] [8] Main: Cache path: "/cache"
+[2026-10-09 18:55:39.043 +00:00] [INF] [8] Main: Temp directory path: "/tmp/jellyfin"
+[2026-10-09 18:55:39.045 +00:00] [INF] [8] Main: Web resources path: "/jellyfin/jellyfin-web"
+[2026-10-09 18:55:39.045 +00:00] [INF] [8] Main: Application directory: "/jellyfin/"
+[2026-10-09 18:55:39.055 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config/data"` (Unknown) successfully checked with "25.3GiB" free which is over the minimum of "2GiB".
+[2026-10-09 18:55:39.056 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/cache"` (Unknown) successfully checked with "25.3GiB" free which is over the minimum of "2GiB".
+[2026-10-09 18:55:39.058 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config"` (Unknown) successfully checked with "25.3GiB" free which is over the minimum of "2GiB".
+[2026-10-09 18:55:39.065 +00:00] [INF] [8] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 18:55:39.132 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 18:55:39.141 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 18:55:39.143 +00:00] [INF] [8] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 18:55:39.183 +00:00] [INF] [8] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-10-09 18:55:40.412 +00:00] [INF] [8] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 18:55:40.433 +00:00] [INF] [8] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-10-09 18:55:40.476 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 18:55:40.476 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-09 18:55:40.480 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 18:55:40.482 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.21.0.2"]
+[2026-10-09 18:55:40.483 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-09 18:55:40.483 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-09 18:55:40.483 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-09 18:55:40.742 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 18:55:40.743 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 18:55:40.745 +00:00] [INF] [8] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 18:55:40.799 +00:00] [INF] [8] Main: Prepare system for possible migrations
+[2026-10-09 18:55:41.014 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "12.0.0.0"
+[2026-10-09 18:55:41.016 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "12.0.0.0"
+[2026-10-09 18:55:41.016 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "12.0.0.0"
+[2026-10-09 18:55:41.037 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "12.0.0.0"
+[2026-10-09 18:55:41.038 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "ListenBrainz Similarity Provider" "12.0.0.0"
+[2026-10-09 18:55:41.038 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "12.0.0.0"
+[2026-10-09 18:55:41.105 +00:00] [INF] [8] Emby.Server.Implementations.Library.Search.SearchManager: Registered 0 external search providers: "". Fallback providers: "Database (priority 100)"
+[2026-10-09 18:55:41.514 +00:00] [INF] [8] Main: Kestrel is listening on "0.0.0.0"
+[2026-10-09 18:55:41.535 +00:00] [WRN] [8] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {4076e1e4-1845-4580-850d-3ccae9db67e6} may be persisted to storage in unencrypted form.
+[2026-10-09 18:55:42.502 +00:00] [WRN] [8] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/wwwroot". Static files may be unavailable.
+[2026-10-09 18:55:42.577 +00:00] [INF] [8] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-10-09 18:55:42.585 +00:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Movies"
+[2026-10-09 18:55:42.595 +00:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-10-10 03:00:00.000 +00:00, which is 08:04:17.4049488 from now.
+[2026-10-09 18:55:42.604 +00:00] [INF] [8] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-10-10 02:00:00.000 +00:00, which is 07:04:17.3955335 from now.
+[2026-10-09 18:55:42.668 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "8.1.2"
+[2026-10-09 18:55:42.715 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-10-09 18:55:42.738 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "av1_qsv", "av1_amf", "av1_vaapi", "libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mjpeg_qsv", "mjpeg_vaapi", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-10-09 18:55:42.758 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "deinterlace_qsv", "deinterlace_vaapi", "flip_vulkan", "hwupload_cuda", "hwupload_vaapi", "libplacebo", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_vulkan", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "scale_vulkan", "tonemapx", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "transpose_cuda", "transpose_opencl", "transpose_vaapi", "transpose_vulkan", "vpp_qsv", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-10-09 18:55:43.055 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan", "amf"]
+[2026-10-09 18:55:45.648 +00:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:55:47.009 +00:00] [INF] [8] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-10-09 18:55:47.011 +00:00] [INF] [8] Emby.Server.Implementations.ApplicationHost: ServerId: "2b0aaabff6694eb18cb9a52d7ad11157"
+[2026-10-09 18:55:47.012 +00:00] [INF] [8] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-10-09 18:55:47.012 +00:00] [INF] [8] Main: Startup complete 0:00:08.5391332
+[2026-10-09 18:55:48.177 +00:00] [INF] [18] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 2 seconds
+[2026-10-09 18:55:54.019 +00:00] [INF] [8] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" request
+[2026-10-09 18:56:16.786 +00:00] [INF] [20] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Movies"
+[2026-10-09 18:56:16.790 +00:00] [INF] [20] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-10-09 18:56:17.668 +00:00] [WRN] [18] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-09 18:56:17.848 +00:00] [WRN] [18] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-09 18:56:18.712 +00:00] [ERR] [11] MediaBrowser.Providers.Movies.MovieMetadataService: Error in "TheMovieDb" for "/media/Movies/The Silent Planet (2024) Hindi Dubbed AMZN - 1080P.mkv"
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer.
+ ---> System.Net.Sockets.SocketException (104): Connection reset by peer
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.CreateException(SocketError error, Boolean forAsyncThrow)
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Net.Sockets.SocketAsyncEngine.System.Threading.IThreadPoolWorkItem.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+   at System.Threading.Thread.StartCallback()
+--- End of stack trace from previous location ---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.<SendAsync>g__CreateHandlerAndSendAsync|115_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at TMDbLib.Rest.RestRequest.SendInternal(HttpMethod method, CancellationToken cancellationToken)
+   at TMDbLib.Rest.RestRequest.Get[T](CancellationToken cancellationToken)
+   at TMDbLib.Rest.RestRequestExtensions.GetOfT[T](RestRequest request, CancellationToken cancellationToken)
+   at TMDbLib.Client.TMDbClient.GetConfigAsync()
+   at MediaBrowser.Providers.Plugins.Tmdb.TmdbClientManager.EnsureClientConfigAsync()
+   at MediaBrowser.Providers.Plugins.Tmdb.TmdbClientManager.FindByExternalIdAsync(String externalId, FindExternalSource source, String language, String countryCode, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Plugins.Tmdb.Movies.TmdbMovieProvider.GetMetadata(MovieInfo info, CancellationToken cancellationToken)
+   at MediaBrowser.Providers.Manager.MetadataService`2.ExecuteRemoteProviders(MetadataResult`1 temp, String logName, Boolean replaceData, TIdType id, IEnumerable`1 providers, CancellationToken cancellationToken)
+[2026-10-09 18:56:19.372 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running 8 post-scan task(s)
+[2026-10-09 18:56:19.373 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 1/8: "SplashscreenPostScanTask"
+[2026-10-09 18:56:27.796 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "SplashscreenPostScanTask" completed after 0 minute(s) and 8 seconds
+[2026-10-09 18:56:27.797 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 2/8: "ArtistsPostScanTask"
+[2026-10-09 18:56:27.851 +00:00] [INF] [7] Emby.Server.Implementations.Library.Validators.ArtistsValidator: Refreshed metadata for 0 new artists out of 0 total
+[2026-10-09 18:56:27.920 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "ArtistsPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:27.920 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 3/8: "CollectionPosterVerifyPostScanTask"
+[2026-10-09 18:56:27.922 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPosterVerifyPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:27.923 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 4/8: "CollectionPostScanTask"
+[2026-10-09 18:56:27.926 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:27.926 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 5/8: "GenresPostScanTask"
+[2026-10-09 18:56:28.034 +00:00] [INF] [7] Emby.Server.Implementations.Library.Validators.GenresValidator: Refreshed metadata for 0 new genres out of 2 total
+[2026-10-09 18:56:28.102 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "GenresPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:28.103 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 6/8: "MusicGenresPostScanTask"
+[2026-10-09 18:56:28.111 +00:00] [INF] [7] Emby.Server.Implementations.Library.Validators.MusicGenresValidator: Refreshed metadata for 0 new music genres out of 0 total
+[2026-10-09 18:56:28.112 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "MusicGenresPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:28.112 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 7/8: "StudiosPostScanTask"
+[2026-10-09 18:56:28.121 +00:00] [INF] [7] Emby.Server.Implementations.Library.Validators.StudiosValidator: Refreshed metadata for 0 new studios out of 0 total
+[2026-10-09 18:56:28.185 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "StudiosPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:28.185 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 8/8: "CleanDatabaseScheduledTask"
+[2026-10-09 18:56:28.289 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CleanDatabaseScheduledTask" completed after 0 minute(s) and 0 seconds
+[2026-10-09 18:56:28.289 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: All post-scan tasks completed after 0 minute(s) and 8 seconds
+[2026-10-09 18:56:28.303 +00:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 11 seconds
+[2026-10-09 18:56:28.348 +00:00] [INF] [8] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Movies"
