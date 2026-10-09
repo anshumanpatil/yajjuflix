@@ -607,3 +607,358 @@ System.Net.Http.HttpRequestException: The SSL connection could not be establishe
 [2026-10-09 18:56:28.289 +00:00] [INF] [7] Emby.Server.Implementations.Library.LibraryManager: All post-scan tasks completed after 0 minute(s) and 8 seconds
 [2026-10-09 18:56:28.303 +00:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 11 seconds
 [2026-10-09 18:56:28.348 +00:00] [INF] [8] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Movies"
+[2026-10-09 18:58:40.032 +00:00] [INF] [27] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-10-09 18:58:40.041 +00:00] [INF] [27] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Movies"
+[2026-10-09 18:58:40.045 +00:00] [INF] [25] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" closed
+[2026-10-09 18:58:40.057 +00:00] [INF] [28] Main: Optimizing the database... This might take a while
+[2026-10-09 18:58:40.194 +00:00] [INF] [28] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
+[2026-10-09 18:58:40.263 +00:00] [INF] [28] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-10-09 18:58:40.263 +00:00] [INF] [28] Emby.Server.Implementations.ApplicationHost: Disposing "Plugin"
+[2026-10-09 19:20:52.161 +00:00] [INF] [1] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:20:52.523 +00:00] [INF] [8] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-09 19:20:52.571 +00:00] [INF] [8] Main: Jellyfin version: "12.0.0"
+[2026-10-09 19:20:52.579 +00:00] [INF] [8] Main: Environment Variables: ["[JELLYFIN_CACHE_DIR, /cache]", "[JELLYFIN_WEB_DIR, /jellyfin/jellyfin-web]", "[JELLYFIN_FFMPEG, /usr/lib/jellyfin-ffmpeg/ffmpeg]", "[JELLYFIN_CONFIG_DIR, /config/config]", "[JELLYFIN_DATA_DIR, /config]", "[JELLYFIN_LOG_DIR, /config/log]"]
+[2026-10-09 19:20:52.584 +00:00] [INF] [8] Main: Arguments: ["/jellyfin/jellyfin.dll"]
+[2026-10-09 19:20:52.585 +00:00] [INF] [8] Main: Operating system: "Debian GNU/Linux 13 (trixie)"
+[2026-10-09 19:20:52.585 +00:00] [INF] [8] Main: Architecture: X64
+[2026-10-09 19:20:52.587 +00:00] [INF] [8] Main: 64-Bit Process: True
+[2026-10-09 19:20:52.587 +00:00] [INF] [8] Main: User Interactive: True
+[2026-10-09 19:20:52.587 +00:00] [INF] [8] Main: Processor count: 2
+[2026-10-09 19:20:52.588 +00:00] [INF] [8] Main: Program data path: "/config"
+[2026-10-09 19:20:52.588 +00:00] [INF] [8] Main: Log directory path: "/config/log"
+[2026-10-09 19:20:52.588 +00:00] [INF] [8] Main: Config directory path: "/config/config"
+[2026-10-09 19:20:52.588 +00:00] [INF] [8] Main: Cache path: "/cache"
+[2026-10-09 19:20:52.589 +00:00] [INF] [8] Main: Temp directory path: "/tmp/jellyfin"
+[2026-10-09 19:20:52.589 +00:00] [INF] [8] Main: Web resources path: "/jellyfin/jellyfin-web"
+[2026-10-09 19:20:52.589 +00:00] [INF] [8] Main: Application directory: "/jellyfin/"
+[2026-10-09 19:20:52.601 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config/data"` (Unknown) successfully checked with "48.5GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:20:52.602 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/cache"` (Unknown) successfully checked with "48.5GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:20:52.603 +00:00] [INF] [8] Jellyfin.Server.Startup: Storage path `"/config"` (Unknown) successfully checked with "48.5GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:20:52.611 +00:00] [INF] [8] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:20:52.760 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 19:20:52.770 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 19:20:52.773 +00:00] [INF] [8] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 19:20:52.837 +00:00] [INF] [8] Jellyfin.Server.Migrations.JellyfinMigrationService: Initialise Migration service.
+[2026-10-09 19:20:54.124 +00:00] [INF] [8] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:20:54.218 +00:00] [INF] [8] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-10-09 19:20:54.305 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:20:54.306 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-09 19:20:54.309 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:20:54.311 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.18.0.2"]
+[2026-10-09 19:20:54.312 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-09 19:20:54.312 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-09 19:20:54.312 +00:00] [INF] [8] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-09 19:20:54.828 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 19:20:54.828 +00:00] [INF] [8] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 19:20:54.829 +00:00] [INF] [8] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 19:20:54.891 +00:00] [INF] [8] Main: Prepare system for possible migrations
+[2026-10-09 19:20:55.178 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "12.0.0.0"
+[2026-10-09 19:20:55.180 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "12.0.0.0"
+[2026-10-09 19:20:55.181 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "12.0.0.0"
+[2026-10-09 19:20:55.199 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "12.0.0.0"
+[2026-10-09 19:20:55.199 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "ListenBrainz Similarity Provider" "12.0.0.0"
+[2026-10-09 19:20:55.200 +00:00] [INF] [8] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "12.0.0.0"
+[2026-10-09 19:20:55.290 +00:00] [INF] [8] Emby.Server.Implementations.Library.Search.SearchManager: Registered 0 external search providers: "". Fallback providers: "Database (priority 100)"
+[2026-10-09 19:20:55.712 +00:00] [INF] [7] Main: Kestrel is listening on "0.0.0.0"
+[2026-10-09 19:20:55.737 +00:00] [WRN] [7] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {2fce8630-837a-4a61-9ee1-cf9286c065c7} may be persisted to storage in unencrypted form.
+[2026-10-09 19:20:56.836 +00:00] [WRN] [7] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/wwwroot". Static files may be unavailable.
+[2026-10-09 19:20:56.891 +00:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-10-09 19:20:56.901 +00:00] [INF] [11] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Movies"
+[2026-10-09 19:20:56.909 +00:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-10-10 03:00:00.000 +00:00, which is 07:39:03.0906416 from now.
+[2026-10-09 19:20:56.916 +00:00] [INF] [7] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-10-10 02:00:00.000 +00:00, which is 06:39:03.0834733 from now.
+[2026-10-09 19:20:57.191 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "8.1.2"
+[2026-10-09 19:20:57.247 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-10-09 19:20:57.267 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "av1_qsv", "av1_amf", "av1_vaapi", "libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mjpeg_qsv", "mjpeg_vaapi", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-10-09 19:20:57.289 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "deinterlace_qsv", "deinterlace_vaapi", "flip_vulkan", "hwupload_cuda", "hwupload_vaapi", "libplacebo", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_vulkan", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "scale_vulkan", "tonemapx", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "transpose_cuda", "transpose_opencl", "transpose_vaapi", "transpose_vulkan", "vpp_qsv", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-10-09 19:20:57.555 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan", "amf"]
+[2026-10-09 19:20:59.974 +00:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-09 19:21:02.149 +00:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 2 seconds
+[2026-10-09 19:21:03.560 +00:00] [INF] [7] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-10-09 19:21:03.562 +00:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: ServerId: "2b0aaabff6694eb18cb9a52d7ad11157"
+[2026-10-09 19:21:03.563 +00:00] [INF] [7] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-10-09 19:21:03.563 +00:00] [INF] [7] Main: Startup complete 0:00:11.8175461
+[2026-10-09 19:21:11.633 +00:00] [INF] [11] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.18.0.1" request
+[2026-10-09 19:21:47.026 +00:00] [INF] [19] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.18.0.1" closed
+[2026-10-09 19:21:47.378 +00:00] [INF] [11] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.18.0.1" request
+[2026-10-09 19:23:23.525 +00:00] [INF] [25] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Saving system configuration
+[2026-10-09 19:23:24.183 +00:00] [INF] [25] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:27:57.116 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Running database optimization before backup
+[2026-10-09 19:27:57.349 +00:00] [INF] [31] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
+[2026-10-09 19:27:57.484 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Attempting to create a new backup at "/config/data/backups/jellyfin-backup-20261009192757.zip"
+[2026-10-09 19:27:57.503 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Starting backup process
+[2026-10-09 19:27:57.528 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin Database backup
+[2026-10-09 19:27:57.535 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "AccessSchedules"
+[2026-10-09 19:27:57.594 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "AccessSchedules" with 0 created
+[2026-10-09 19:27:57.597 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ActivityLogs"
+[2026-10-09 19:27:57.621 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ActivityLogs" with 10 created
+[2026-10-09 19:27:57.622 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ApiKeys"
+[2026-10-09 19:27:57.631 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ApiKeys" with 0 created
+[2026-10-09 19:27:57.632 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Devices"
+[2026-10-09 19:27:57.688 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Devices" with 2 created
+[2026-10-09 19:27:57.688 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "DeviceOptions"
+[2026-10-09 19:27:57.697 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "DeviceOptions" with 0 created
+[2026-10-09 19:27:57.697 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "DisplayPreferences"
+[2026-10-09 19:27:57.712 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "DisplayPreferences" with 1 created
+[2026-10-09 19:27:57.713 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ImageInfos"
+[2026-10-09 19:27:57.723 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ImageInfos" with 1 created
+[2026-10-09 19:27:57.723 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ItemDisplayPreferences"
+[2026-10-09 19:27:57.736 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ItemDisplayPreferences" with 5 created
+[2026-10-09 19:27:57.736 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "CustomItemDisplayPreferences"
+[2026-10-09 19:27:57.744 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "CustomItemDisplayPreferences" with 0 created
+[2026-10-09 19:27:57.745 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Permissions"
+[2026-10-09 19:27:57.755 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Permissions" with 24 created
+[2026-10-09 19:27:57.756 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Preferences"
+[2026-10-09 19:27:57.768 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Preferences" with 13 created
+[2026-10-09 19:27:57.768 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Users"
+[2026-10-09 19:27:57.785 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Users" with 1 created
+[2026-10-09 19:27:57.785 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "TrickplayInfos"
+[2026-10-09 19:27:57.794 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "TrickplayInfos" with 0 created
+[2026-10-09 19:27:57.795 +00:00] [INF] [31] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "MediaSegments"
+[2026-10-09 19:27:57.805 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "MediaSegments" with 0 created
+[2026-10-09 19:27:57.805 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "UserData"
+[2026-10-09 19:27:57.816 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "UserData" with 0 created
+[2026-10-09 19:27:57.816 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "AncestorIds"
+[2026-10-09 19:27:57.881 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "AncestorIds" with 6 created
+[2026-10-09 19:27:57.882 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "AttachmentStreamInfos"
+[2026-10-09 19:27:57.903 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "AttachmentStreamInfos" with 0 created
+[2026-10-09 19:27:57.903 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "BaseItems"
+[2026-10-09 19:27:57.932 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "BaseItems" with 10 created
+[2026-10-09 19:27:57.933 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Chapters"
+[2026-10-09 19:27:57.945 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Chapters" with 0 created
+[2026-10-09 19:27:57.945 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ItemValues"
+[2026-10-09 19:27:57.957 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ItemValues" with 2 created
+[2026-10-09 19:27:57.957 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "ItemValuesMap"
+[2026-10-09 19:27:57.968 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "ItemValuesMap" with 2 created
+[2026-10-09 19:27:57.968 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "MediaStreamInfos"
+[2026-10-09 19:27:57.992 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "MediaStreamInfos" with 3 created
+[2026-10-09 19:27:57.992 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "Peoples"
+[2026-10-09 19:27:58.000 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "Peoples" with 0 created
+[2026-10-09 19:27:58.000 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "PeopleBaseItemMap"
+[2026-10-09 19:27:58.010 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "PeopleBaseItemMap" with 0 created
+[2026-10-09 19:27:58.010 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "LinkedChildren"
+[2026-10-09 19:27:58.019 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "LinkedChildren" with 0 created
+[2026-10-09 19:27:58.019 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "BaseItemProviders"
+[2026-10-09 19:27:58.028 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "BaseItemProviders" with 1 created
+[2026-10-09 19:27:58.029 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "BaseItemImageInfos"
+[2026-10-09 19:27:58.041 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "BaseItemImageInfos" with 9 created
+[2026-10-09 19:27:58.042 +00:00] [INF] [3] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "BaseItemMetadataFields"
+[2026-10-09 19:27:58.063 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "BaseItemMetadataFields" with 0 created
+[2026-10-09 19:27:58.063 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "BaseItemTrailerTypes"
+[2026-10-09 19:27:58.073 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "BaseItemTrailerTypes" with 0 created
+[2026-10-09 19:27:58.073 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "KeyframeData"
+[2026-10-09 19:27:58.084 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "KeyframeData" with 0 created
+[2026-10-09 19:27:58.085 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin backup of entity "HistoryRow"
+[2026-10-09 19:27:58.100 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of entity "HistoryRow" with 100 created
+[2026-10-09 19:27:58.101 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/config"
+[2026-10-09 19:27:58.142 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/config/users"
+[2026-10-09 19:27:58.152 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/root"
+[2026-10-09 19:27:58.160 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/data/playlists"
+[2026-10-09 19:27:58.161 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/data/ScheduledTasks"
+[2026-10-09 19:27:58.170 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup of folder "/config/metadata"
+[2026-10-09 19:27:59.115 +00:00] [INF] [29] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Backup created
+[2026-10-09 19:29:14.945 +00:00] [INF] [30] Emby.Server.Implementations.ApplicationHost: App needs to be restarted.
+[2026-10-09 19:29:15.454 +00:00] [INF] [30] Emby.Server.Implementations.Session.SessionManager: Sending shutdown notifications
+[2026-10-09 19:29:15.475 +00:00] [INF] [33] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.18.0.1" closed
+[2026-10-09 19:29:15.477 +00:00] [INF] [30] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media/Movies"
+[2026-10-09 19:29:15.509 +00:00] [INF] [24] Main: Optimizing the database... This might take a while
+[2026-10-09 19:29:15.682 +00:00] [INF] [24] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
+[2026-10-09 19:29:15.783 +00:00] [INF] [24] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-10-09 19:29:15.783 +00:00] [INF] [24] Emby.Server.Implementations.ApplicationHost: Disposing "Plugin"
+[2026-10-09 19:29:15.804 +00:00] [INF] [24] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-09 19:29:15.837 +00:00] [INF] [24] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:29:15.847 +00:00] [INF] [24] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-10-09 19:29:15.853 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:29:15.853 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-09 19:29:15.854 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:29:15.854 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.18.0.2"]
+[2026-10-09 19:29:15.854 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-09 19:29:15.854 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-09 19:29:15.854 +00:00] [INF] [24] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-09 19:29:15.885 +00:00] [INF] [24] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 19:29:15.886 +00:00] [INF] [24] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 19:29:15.886 +00:00] [INF] [24] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 19:29:15.912 +00:00] [WRN] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin restoring system to "/config/data/backups/jellyfin-backup-20261009192757.zip"
+[2026-10-09 19:29:15.913 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Storage path `"/config/data"` (Unknown) successfully checked with "48.4GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:29:15.915 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Storage path `"/cache"` (Unknown) successfully checked with "48.4GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:29:15.916 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Storage path `"/config"` (Unknown) successfully checked with "48.4GiB" free which is over the minimum of "2GiB".
+[2026-10-09 19:29:15.919 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/network.xml"
+[2026-10-09 19:29:15.924 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/system.xml"
+[2026-10-09 19:29:15.926 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/database.xml"
+[2026-10-09 19:29:15.929 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/encoding.xml"
+[2026-10-09 19:29:15.934 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/branding.xml"
+[2026-10-09 19:29:15.936 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/logging.default.json"
+[2026-10-09 19:29:15.946 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/config/users/yajju/profile.jpg"
+[2026-10-09 19:29:15.951 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/data/ScheduledTasks/7738148f-fcd0-7979-c7ce-b148e06b3aed.js"
+[2026-10-09 19:29:15.953 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/data/ScheduledTasks/f9b057c0-54e9-e6da-ee4a-88ffd146a403.js"
+[2026-10-09 19:29:15.960 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/data/ScheduledTasks/7d8088c1-0902-f1bf-4072-ded42437bcfb.js"
+[2026-10-09 19:29:15.963 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/root/.jellyfin-root"
+[2026-10-09 19:29:15.965 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/root/default/Movies/Movies.mblink"
+[2026-10-09 19:29:15.969 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/root/default/Movies/movies.collection"
+[2026-10-09 19:29:15.972 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/root/default/Movies/options.xml"
+[2026-10-09 19:29:15.977 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/49/4936f5b1a6f84f0b0aa2657368a5b364/poster.png"
+[2026-10-09 19:29:15.991 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/f1/f137a2dd21bbc1b99aa5c0f6bf02a805/poster.png"
+[2026-10-09 19:29:16.002 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/f2/f27caa37e5142225cceded48f6553502/poster.jpg"
+[2026-10-09 19:29:16.011 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/7b/7bb55b6f5d82f81fd26d4c3b13156770/poster.jpg"
+[2026-10-09 19:29:16.022 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/7b/7bb55b6f5d82f81fd26d4c3b13156770/backdrop.jpg"
+[2026-10-09 19:29:16.062 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/7b/7bb55b6f5d82f81fd26d4c3b13156770/logo.png"
+[2026-10-09 19:29:16.072 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/7b/7bb55b6f5d82f81fd26d4c3b13156770/landscape.jpg"
+[2026-10-09 19:29:16.126 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/d3/d3bf560475125eed829c435f3d8329e3/poster.png"
+[2026-10-09 19:29:16.140 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore and override "/config/metadata/library/e9/e9d5075a555c1cbc394eec4cef295274/poster.png"
+[2026-10-09 19:29:16.165 +00:00] [INF] [24] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin restoring Database
+[2026-10-09 19:29:16.931 +00:00] [INF] [30] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Begin purging database
+[2026-10-09 19:29:17.022 +00:00] [INF] [30] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Database Purged
+[2026-10-09 19:29:17.023 +00:00] [INF] [30] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "AccessSchedules"
+[2026-10-09 19:29:17.024 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "AccessSchedules"
+[2026-10-09 19:29:17.026 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "AccessSchedules"
+[2026-10-09 19:29:17.027 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ActivityLogs"
+[2026-10-09 19:29:17.027 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ActivityLogs"
+[2026-10-09 19:29:17.040 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 10 entries for "ActivityLogs"
+[2026-10-09 19:29:17.048 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ApiKeys"
+[2026-10-09 19:29:17.049 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ApiKeys"
+[2026-10-09 19:29:17.050 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "ApiKeys"
+[2026-10-09 19:29:17.051 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Devices"
+[2026-10-09 19:29:17.051 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Devices"
+[2026-10-09 19:29:17.062 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 2 entries for "Devices"
+[2026-10-09 19:29:17.063 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "DeviceOptions"
+[2026-10-09 19:29:17.063 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "DeviceOptions"
+[2026-10-09 19:29:17.063 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "DeviceOptions"
+[2026-10-09 19:29:17.063 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "DisplayPreferences"
+[2026-10-09 19:29:17.063 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "DisplayPreferences"
+[2026-10-09 19:29:17.075 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 1 entries for "DisplayPreferences"
+[2026-10-09 19:29:17.076 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ImageInfos"
+[2026-10-09 19:29:17.076 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ImageInfos"
+[2026-10-09 19:29:17.078 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 1 entries for "ImageInfos"
+[2026-10-09 19:29:17.079 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ItemDisplayPreferences"
+[2026-10-09 19:29:17.079 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ItemDisplayPreferences"
+[2026-10-09 19:29:17.084 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 5 entries for "ItemDisplayPreferences"
+[2026-10-09 19:29:17.084 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "CustomItemDisplayPreferences"
+[2026-10-09 19:29:17.084 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "CustomItemDisplayPreferences"
+[2026-10-09 19:29:17.085 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "CustomItemDisplayPreferences"
+[2026-10-09 19:29:17.085 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Permissions"
+[2026-10-09 19:29:17.085 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Permissions"
+[2026-10-09 19:29:17.092 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 24 entries for "Permissions"
+[2026-10-09 19:29:17.092 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Preferences"
+[2026-10-09 19:29:17.092 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Preferences"
+[2026-10-09 19:29:17.097 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 13 entries for "Preferences"
+[2026-10-09 19:29:17.097 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Users"
+[2026-10-09 19:29:17.097 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Users"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 1 entries for "Users"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "TrickplayInfos"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "TrickplayInfos"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "TrickplayInfos"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "MediaSegments"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "MediaSegments"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "MediaSegments"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "UserData"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "UserData"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "UserData"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "AncestorIds"
+[2026-10-09 19:29:17.112 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "AncestorIds"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 6 entries for "AncestorIds"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "AttachmentStreamInfos"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "AttachmentStreamInfos"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "AttachmentStreamInfos"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "BaseItems"
+[2026-10-09 19:29:17.138 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "BaseItems"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 10 entries for "BaseItems"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Chapters"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Chapters"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "Chapters"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ItemValues"
+[2026-10-09 19:29:17.356 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ItemValues"
+[2026-10-09 19:29:17.377 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 2 entries for "ItemValues"
+[2026-10-09 19:29:17.377 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "ItemValuesMap"
+[2026-10-09 19:29:17.378 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "ItemValuesMap"
+[2026-10-09 19:29:17.394 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 2 entries for "ItemValuesMap"
+[2026-10-09 19:29:17.394 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "MediaStreamInfos"
+[2026-10-09 19:29:17.394 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "MediaStreamInfos"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 3 entries for "MediaStreamInfos"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "Peoples"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "Peoples"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "Peoples"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "PeopleBaseItemMap"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "PeopleBaseItemMap"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "PeopleBaseItemMap"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "LinkedChildren"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "LinkedChildren"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "LinkedChildren"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "BaseItemProviders"
+[2026-10-09 19:29:17.477 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "BaseItemProviders"
+[2026-10-09 19:29:17.491 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 1 entries for "BaseItemProviders"
+[2026-10-09 19:29:17.493 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "BaseItemImageInfos"
+[2026-10-09 19:29:17.493 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "BaseItemImageInfos"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 9 entries for "BaseItemImageInfos"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "BaseItemMetadataFields"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "BaseItemMetadataFields"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "BaseItemMetadataFields"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "BaseItemTrailerTypes"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "BaseItemTrailerTypes"
+[2026-10-09 19:29:17.517 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "BaseItemTrailerTypes"
+[2026-10-09 19:29:17.518 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Read backup of "KeyframeData"
+[2026-10-09 19:29:17.518 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restore backup of "KeyframeData"
+[2026-10-09 19:29:17.518 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Prepared to restore 0 entries for "KeyframeData"
+[2026-10-09 19:29:17.518 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Try restore Database
+[2026-10-09 19:29:17.773 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restored database
+[2026-10-09 19:29:17.773 +00:00] [INF] [32] Jellyfin.Server.Implementations.FullSystemBackup.BackupService: Restored Jellyfin system from 10/09/2026 19:27:57 +00:00
+[2026-10-09 19:29:17.774 +00:00] [INF] [32] Main: Optimizing the database... This might take a while
+[2026-10-09 19:29:17.929 +00:00] [INF] [32] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: jellyfin.db optimized successfully!
+[2026-10-09 19:29:17.931 +00:00] [INF] [32] Emby.Server.Implementations.ApplicationHost: Disposing "CoreAppHost"
+[2026-10-09 19:29:17.936 +00:00] [INF] [32] Jellyfin.Server.ServerSetupApp.SetupServer: Kestrel is listening on "0.0.0.0"
+[2026-10-09 19:29:17.946 +00:00] [INF] [32] Emby.Server.Implementations.AppBase.BaseConfigurationManager: Setting cache path: "/cache"
+[2026-10-09 19:29:17.964 +00:00] [INF] [32] Emby.Server.Implementations.ApplicationHost: Loading assemblies
+[2026-10-09 19:29:17.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Defined LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:29:17.969 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Defined LAN exclusions: []
+[2026-10-09 19:29:17.970 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Used LAN subnets: ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"]
+[2026-10-09 19:29:17.970 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Filtered interface addresses: ["127.0.0.1", "172.18.0.2"]
+[2026-10-09 19:29:17.971 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Bind Addresses ["0.0.0.0"]
+[2026-10-09 19:29:17.971 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Remote IP filter is "Allowlist"
+[2026-10-09 19:29:17.971 +00:00] [INF] [32] Jellyfin.Networking.Manager.NetworkManager: Filtered subnets: []
+[2026-10-09 19:29:17.984 +00:00] [INF] [32] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLite connection string: "Data Source=/config/data/jellyfin.db;Cache=Private;Default Timeout=60;Pooling=True"
+[2026-10-09 19:29:17.984 +00:00] [INF] [32] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: SQLITE connection pragma command set to: 
+"PRAGMA locking_mode=NORMAL;
+PRAGMA journal_size_limit=134217728;
+PRAGMA synchronous=1;
+PRAGMA temp_store=2;
+"
+[2026-10-09 19:29:17.984 +00:00] [INF] [32] Jellyfin.Database.Implementations.Locking.NoLockBehavior: The database locking mode has been set to: NoLock.
+[2026-10-09 19:29:17.993 +00:00] [INF] [32] Main: Prepare system for possible migrations
+[2026-10-09 19:29:18.060 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "TMDb" "12.0.0.0"
+[2026-10-09 19:29:18.064 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "Studio Images" "12.0.0.0"
+[2026-10-09 19:29:18.068 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "OMDb" "12.0.0.0"
+[2026-10-09 19:29:18.081 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "MusicBrainz" "12.0.0.0"
+[2026-10-09 19:29:18.087 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "ListenBrainz Similarity Provider" "12.0.0.0"
+[2026-10-09 19:29:18.092 +00:00] [INF] [32] Emby.Server.Implementations.Plugins.PluginManager: Loaded plugin: "AudioDB" "12.0.0.0"
+[2026-10-09 19:29:18.168 +00:00] [INF] [32] Emby.Server.Implementations.Library.Search.SearchManager: Registered 0 external search providers: "". Fallback providers: "Database (priority 100)"
+[2026-10-09 19:29:18.180 +00:00] [INF] [32] Main: Kestrel is listening on "0.0.0.0"
+[2026-10-09 19:29:18.512 +00:00] [WRN] [32] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The WebRootPath was not found: "/wwwroot". Static files may be unavailable.
+[2026-10-09 19:29:18.549 +00:00] [INF] [32] Emby.Server.Implementations.ApplicationHost: Running startup tasks
+[2026-10-09 19:29:18.555 +00:00] [INF] [27] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media/Movies"
+[2026-10-09 19:29:18.568 +00:00] [INF] [32] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Generate Trickplay Images" set to fire at 2026-10-10 03:00:00.000 +00:00, which is 07:30:41.4313243 from now.
+[2026-10-09 19:29:18.572 +00:00] [INF] [32] Emby.Server.Implementations.ScheduledTasks.TaskManager: Daily trigger for "Extract Chapter Images" set to fire at 2026-10-10 02:00:00.000 +00:00, which is 06:30:41.4271308 from now.
+[2026-10-09 19:29:19.045 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Found ffmpeg version "8.1.2"
+[2026-10-09 19:29:19.161 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "decoders": ["libdav1d", "av1", "av1_cuvid", "av1_qsv", "h264", "h264_qsv", "h264_cuvid", "hevc", "hevc_qsv", "hevc_cuvid", "mpeg2video", "mpeg2_qsv", "mpeg2_cuvid", "mpeg4", "mpeg4_cuvid", "msmpeg4", "vc1_qsv", "vc1_cuvid", "vp8", "libvpx", "vp8_cuvid", "vp8_qsv", "vp9", "libvpx-vp9", "vp9_cuvid", "vp9_qsv", "aac", "ac3", "ac4", "dca", "flac", "mp3", "truehd"]
+[2026-10-09 19:29:19.188 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available "encoders": ["libsvtav1", "av1_nvenc", "av1_qsv", "av1_amf", "av1_vaapi", "libx264", "h264_amf", "h264_nvenc", "h264_qsv", "h264_v4l2m2m", "h264_vaapi", "libx265", "hevc_amf", "hevc_nvenc", "hevc_qsv", "hevc_vaapi", "mjpeg_qsv", "mjpeg_vaapi", "aac", "libfdk_aac", "ac3", "alac", "dca", "flac", "libmp3lame", "libopus", "truehd", "libvorbis", "srt"]
+[2026-10-09 19:29:19.218 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available filters: ["bwdif_cuda", "bwdif_opencl", "deinterlace_qsv", "deinterlace_vaapi", "flip_vulkan", "hwupload_cuda", "hwupload_vaapi", "libplacebo", "overlay_opencl", "overlay_qsv", "overlay_vaapi", "overlay_vulkan", "overlay_cuda", "procamp_vaapi", "scale_cuda", "scale_opencl", "scale_qsv", "scale_vaapi", "scale_vulkan", "tonemapx", "tonemap_cuda", "tonemap_opencl", "tonemap_vaapi", "transpose_cuda", "transpose_opencl", "transpose_vaapi", "transpose_vulkan", "vpp_qsv", "yadif_cuda", "yadif_opencl", "zscale", "alphasrc"]
+[2026-10-09 19:29:19.537 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: Available hwaccel types: ["cuda", "vaapi", "qsv", "drm", "opencl", "vulkan", "amf"]
+[2026-10-09 19:29:20.604 +00:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.18.0.1" request
+[2026-10-09 19:29:21.587 +00:00] [INF] [33] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-09 19:29:23.484 +00:00] [INF] [24] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 1 seconds
+[2026-10-09 19:29:24.933 +00:00] [INF] [32] MediaBrowser.MediaEncoding.Encoder.MediaEncoder: FFmpeg: "/usr/lib/jellyfin-ffmpeg/ffmpeg"
+[2026-10-09 19:29:24.933 +00:00] [INF] [32] Emby.Server.Implementations.ApplicationHost: ServerId: "2b0aaabff6694eb18cb9a52d7ad11157"
+[2026-10-09 19:29:24.933 +00:00] [INF] [32] Emby.Server.Implementations.ApplicationHost: Core startup complete
+[2026-10-09 19:29:24.933 +00:00] [INF] [32] Main: Startup complete 0:00:07.0020775
